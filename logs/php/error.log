@@ -3,3 +3,4 @@
 [04-Aug-2024 00:41:55 UTC] PHP Warning:  Undefined variable $images in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-content\themes\astra\page-display-submissions.php on line 107
 [04-Aug-2024 00:43:02 UTC] PHP Warning:  Undefined variable $images in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-content\themes\astra\page-display-submissions.php on line 107
 [04-Aug-2024 00:43:04 UTC] PHP Warning:  Undefined variable $images in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-content\themes\astra\page-display-submissions.php on line 107
+[04-Aug-2024 19:19:14 UTC] PHP Warning:  Undefined variable $page_selection in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\functions.php on line 9020

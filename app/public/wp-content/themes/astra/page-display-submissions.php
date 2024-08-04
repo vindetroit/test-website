@@ -46,15 +46,16 @@ get_header(); ?>
         if ($image && is_array($image)):
             $url = isset($image['url']) ? esc_url($image['url']) : '';
             $alt = isset($image['alt']) ? esc_attr($image['alt']) : 'Gallery image';
-            ?>
-            <div class="gallery-item">
-                <?php if ($url): ?>
-                    <img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>" class="front">
-                    <img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>" class="back">
-                <?php else: ?>
-                    <p>Image not available</p>
-                <?php endif; ?>
-            </div>
+            for ($i = 0; $i < 9; $i++): ?>
+                <div class="gallery-item">
+                    <?php if ($url): ?>
+                        <img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>" class="front">
+                        <img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>" class="back">
+                    <?php else: ?>
+                        <p>Image not available</p>
+                    <?php endif; ?>
+                </div>
+            <?php endfor; ?>
         <?php
         else:
             echo '<p>No image found for this page.</p>';
@@ -62,6 +63,10 @@ get_header(); ?>
         ?>
     </div>
 </div>
+
+<?php
+$random_start = rand(0, 359);
+?>
 
 <style>
 .gallery-container {
@@ -73,15 +78,14 @@ get_header(); ?>
     align-items: center;
     overflow: hidden;
 }
-
 .gallery {
-    width: 150px; /* Smaller width */
-    height: 150px; /* Smaller height */
+    width: 200px;
+    height: 200px;
     position: relative;
     transform-style: preserve-3d;
     animation: rotate 15s infinite linear;
+    transform: rotateY(<?php echo $random_start; ?>deg);
 }
-
 .gallery-item {
     position: absolute;
     width: 100%;
@@ -89,24 +93,30 @@ get_header(); ?>
     backface-visibility: hidden;
     transform-style: preserve-3d;
 }
-
 .gallery-item .front {
-    transform: rotateY(0deg) translateZ(175px);
+    transform: translateZ(300px);
 }
-
 .gallery-item .back {
     display: none;
 }
-
 .gallery-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-
+/* Adjusted rotations for 9 items */
+.gallery-item:nth-child(1) .front { transform: rotateY(0deg) translateZ(300px); }
+.gallery-item:nth-child(2) .front { transform: rotateY(40deg) translateZ(300px); }
+.gallery-item:nth-child(3) .front { transform: rotateY(80deg) translateZ(300px); }
+.gallery-item:nth-child(4) .front { transform: rotateY(120deg) translateZ(300px); }
+.gallery-item:nth-child(5) .front { transform: rotateY(160deg) translateZ(300px); }
+.gallery-item:nth-child(6) .front { transform: rotateY(200deg) translateZ(300px); }
+.gallery-item:nth-child(7) .front { transform: rotateY(240deg) translateZ(300px); }
+.gallery-item:nth-child(8) .front { transform: rotateY(280deg) translateZ(300px); }
+.gallery-item:nth-child(9) .front { transform: rotateY(320deg) translateZ(300px); }
 @keyframes rotate {
-    from { transform: rotateY(0deg) translateZ(175px); }
-    to { transform: rotateY(360deg) translateZ(175px); }
+    from { transform: rotateY(<?php echo $random_start; ?>deg); }
+    to { transform: rotateY(<?php echo $random_start + 360; ?>deg); }
 }
 </style>
 

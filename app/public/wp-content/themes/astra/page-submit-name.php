@@ -20,14 +20,12 @@ get_header(); ?>
         <label for="user_name">Your Name</label>
         <input type="text" name="user_name" id="user_name" required>
 
-        <label for="page_selection">Select Page</label>
-        <select name="page_selection" id="page_selection" required>
-            <?php
-            $pages = get_pages();
-            foreach ($pages as $page) {
-                echo '<option value="' . $page->ID . '">' . $page->post_title . '</option>';
-            }
-            ?>
+        <label for="color_selection">Select Color</label>
+        <select name="color_selection" id="color_selection" required>
+            <option value="red">Red</option>
+            <option value="yellow">Yellow</option>
+            <option value="blue">Blue</option>
+            <!-- Add more options as needed -->
         </select>
 
         <input type="submit" name="submit_form" value="Submit">
@@ -35,4 +33,5 @@ get_header(); ?>
 </div>
 
 <?php get_footer(); ?>
+
 

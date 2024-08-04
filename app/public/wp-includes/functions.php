@@ -9016,8 +9016,17 @@ function usp_get_pages_dropdown() {
 }
 
 
+//Admin custom menu
 function register_submission_admin_menu() {
-    add_menu_page('User Submissions', 'User Submissions', 'manage_options', 'user-submissions', 'display_user_submissions', 'dashicons-admin-post', 26);
+    add_menu_page(
+        'User Submissions',
+        'User Submissions',
+        'manage_options',
+        'user-submissions',
+        'display_user_submissions',
+        'dashicons-admin-post',
+        26
+    );
 }
 add_action('admin_menu', 'register_submission_admin_menu');
 
@@ -9036,24 +9045,34 @@ function display_user_submissions() {
                 <thead>
                     <tr>
                         <th class="manage-column">Name</th>
-                        <th class="manage-column">Selected Page</th>
+                        <th class="manage-column">Current Page</th>
+                        <th class="manage-column">Change Page</th>
                         <th class="manage-column">Action</th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php while ($query->have_posts()) : $query->the_post(); 
                         $post_id = get_the_ID();
-                        $user_name = get_field('user_name', $post_id);
-                        $page_selection = get_field('page_selection', $post_id);
+                        $user_name = get_post_meta($post_id, 'user_name', true);
+                        $page_selection = get_post_meta($post_id, 'page_selection', true);
+                        $current_page = 'Not assigned';
+                        if ($page_selection) {
+                            $page = get_post($page_selection);
+                            if ($page) {
+                                $current_page = $page->post_title;
+                            }
+                        }
                         ?>
                         <tr>
                             <td><?php echo esc_html($user_name); ?></td>
+                            <td><?php echo esc_html($current_page); ?></td>
                             <td>
                                 <form method="post" action="<?php echo esc_url(admin_url('admin-post.php')); ?>">
                                     <?php wp_nonce_field('update_page_selection_nonce'); ?>
                                     <input type="hidden" name="action" value="update_page_selection">
                                     <input type="hidden" name="post_id" value="<?php echo esc_attr($post_id); ?>">
                                     <select name="page_selection">
+                                        <option value="">Select a page</option>
                                         <?php
                                         $pages = get_pages();
                                         foreach ($pages as $page) {
@@ -9084,7 +9103,7 @@ function update_page_selection() {
         $post_id = intval($_POST['post_id']);
         $page_selection = sanitize_text_field($_POST['page_selection']);
 
-        update_field('page_selection', $page_selection, $post_id);
+        update_post_meta($post_id, 'page_selection', $page_selection);
 
         wp_redirect(admin_url('admin.php?page=user-submissions&message=updated'));
         exit;
@@ -9094,48 +9113,97 @@ add_action('admin_post_update_page_selection', 'update_page_selection');
 
 
 function handle_user_submission() {
+    // Check if form is submitted and nonce is valid
     if (isset($_POST['submit_form']) && check_admin_referer('user_submission_nonce')) {
         $user_name = sanitize_text_field($_POST['user_name']);
-        $page_selection = sanitize_text_field($_POST['page_selection']);
+        $color_selection = sanitize_text_field($_POST['color_selection']);
         $current_user = wp_get_current_user();
 
-        if (!empty($user_name) && !empty($page_selection) && !in_array('administrator', $current_user->roles)) {
-            // Check if the user has already submitted a post
-            $existing_posts = get_posts(array(
-                'post_type' => 'post',
-                'author' => $current_user->ID,
-                'post_status' => 'any',
-            ));
+        // Ensure user is logged in
+        if (!is_user_logged_in()) {
+            wp_redirect(add_query_arg('message', 'not_logged_in', wp_get_referer()));
+            exit;
+        }
 
-            if (empty($existing_posts)) {
-                $new_post = array(
-                    'post_title'    => wp_strip_all_tags($user_name),
-                    'post_content'  => '',
-                    'post_status'   => 'pending',
-                    'post_type'     => 'post', // or a custom post type
-                    'post_author'   => $current_user->ID,
+        // Ensure required fields are not empty
+        if (!empty($user_name) && !empty($color_selection)) {
+            // Allow admins to bypass post check
+            if (!in_array('administrator', $current_user->roles)) {
+                // Check if the user has already submitted a post
+                $existing_posts = get_posts(array(
+                    'post_type'   => 'post',
+                    'author'      => $current_user->ID,
+                    'post_status' => 'any',
+                    'numberposts' => 1, // Limit to 1 post for efficiency
+                ));
+
+                if (!empty($existing_posts)) {
+                    wp_redirect(add_query_arg('message', 'already_submitted', wp_get_referer()));
+                    exit;
+                }
+            }
+
+            // Prepare and insert the new post
+            $new_post = array(
+                'post_title'    => wp_strip_all_tags($user_name),
+                'post_content'  => '',
+                'post_status'   => 'pending',
+                'post_type'     => 'post', // or a custom post type
+                'post_author'   => $current_user->ID,
+            );
+
+            $post_id = wp_insert_post($new_post);
+
+            if ($post_id && !is_wp_error($post_id)) {
+                // Create a new page
+                $new_page = array(
+                    'post_title'    => 'Page for ' . wp_strip_all_tags($user_name),
+                    'post_content'  => 'This page is linked to the post ID ' . $post_id,
+                    'post_status'   => 'publish',
+                    'post_type'     => 'page',
                 );
 
-                $post_id = wp_insert_post($new_post);
+                $page_id = wp_insert_post($new_page);
 
-                if ($post_id) {
+                if ($page_id && !is_wp_error($page_id)) {
+                    // Update ACF fields for the post
                     update_field('user_name', $user_name, $post_id);
-                    update_field('page_selection', $page_selection, $post_id);
+                    update_field('color_selection', $color_selection, $post_id);
+
+                    // Link the page ID with the post using the custom ACF field
+                    update_field('linked_page', $page_id, $post_id);
 
                     // Redirect back to the form page with a success message
                     wp_redirect(add_query_arg('message', 'success', wp_get_referer()));
                     exit;
+                } else {
+                    // Log error for debugging
+                    error_log('Page creation failed: ' . print_r($page_id, true));
+                    wp_redirect(add_query_arg('message', 'submission_error', wp_get_referer()));
+                    exit;
                 }
             } else {
-                // Redirect back to the form page with a message
-                wp_redirect(add_query_arg('message', 'already_submitted', wp_get_referer()));
+                // Log error for debugging
+                error_log('Post creation failed: ' . print_r($post_id, true));
+                wp_redirect(add_query_arg('message', 'submission_error', wp_get_referer()));
                 exit;
             }
+        } else {
+            // Redirect back to the form page with an error message
+            wp_redirect(add_query_arg('message', 'missing_fields', wp_get_referer()));
+            exit;
         }
+    } else {
+        // Redirect back to the form page if nonce verification failed
+        wp_redirect(add_query_arg('message', 'invalid_nonce', wp_get_referer()));
+        exit;
     }
 }
 add_action('admin_post_nopriv_handle_user_submission', 'handle_user_submission');
 add_action('admin_post_handle_user_submission', 'handle_user_submission');
+
+
+
 
 
 
