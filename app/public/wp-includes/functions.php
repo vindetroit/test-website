@@ -9016,7 +9016,82 @@ function usp_get_pages_dropdown() {
 }
 
 
-// functions.php
+function register_submission_admin_menu() {
+    add_menu_page('User Submissions', 'User Submissions', 'manage_options', 'user-submissions', 'display_user_submissions', 'dashicons-admin-post', 26);
+}
+add_action('admin_menu', 'register_submission_admin_menu');
+
+function display_user_submissions() {
+    $args = array(
+        'post_type' => 'post',
+        'posts_per_page' => -1,
+        'post_status' => array('pending', 'publish'),
+    );
+    $query = new WP_Query($args);
+
+    if ($query->have_posts()) : ?>
+        <div class="wrap">
+            <h1>User Submissions</h1>
+            <table class="widefat fixed" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th class="manage-column">Name</th>
+                        <th class="manage-column">Selected Page</th>
+                        <th class="manage-column">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <?php while ($query->have_posts()) : $query->the_post(); 
+                        $post_id = get_the_ID();
+                        $user_name = get_field('user_name', $post_id);
+                        $page_selection = get_field('page_selection', $post_id);
+                        ?>
+                        <tr>
+                            <td><?php echo esc_html($user_name); ?></td>
+                            <td>
+                                <form method="post" action="<?php echo esc_url(admin_url('admin-post.php')); ?>">
+                                    <?php wp_nonce_field('update_page_selection_nonce'); ?>
+                                    <input type="hidden" name="action" value="update_page_selection">
+                                    <input type="hidden" name="post_id" value="<?php echo esc_attr($post_id); ?>">
+                                    <select name="page_selection">
+                                        <?php
+                                        $pages = get_pages();
+                                        foreach ($pages as $page) {
+                                            echo '<option value="' . $page->ID . '"' . selected($page->ID, $page_selection, false) . '>' . $page->post_title . '</option>';
+                                        }
+                                        ?>
+                                    </select>
+                                    <input type="submit" class="button" value="Update">
+                                </form>
+                            </td>
+                            <td>
+                                <a href="<?php echo get_edit_post_link($post_id); ?>" class="button">Edit Post</a>
+                            </td>
+                        </tr>
+                    <?php endwhile; ?>
+                </tbody>
+            </table>
+        </div>
+    <?php else : ?>
+        <p>No submissions found.</p>
+    <?php endif;
+
+    wp_reset_postdata();
+}
+
+function update_page_selection() {
+    if (isset($_POST['page_selection']) && isset($_POST['post_id']) && check_admin_referer('update_page_selection_nonce')) {
+        $post_id = intval($_POST['post_id']);
+        $page_selection = sanitize_text_field($_POST['page_selection']);
+
+        update_field('page_selection', $page_selection, $post_id);
+
+        wp_redirect(admin_url('admin.php?page=user-submissions&message=updated'));
+        exit;
+    }
+}
+add_action('admin_post_update_page_selection', 'update_page_selection');
+
 
 function handle_user_submission() {
     if (isset($_POST['submit_form']) && check_admin_referer('user_submission_nonce')) {
@@ -9061,6 +9136,7 @@ function handle_user_submission() {
 }
 add_action('admin_post_nopriv_handle_user_submission', 'handle_user_submission');
 add_action('admin_post_handle_user_submission', 'handle_user_submission');
+
 
 
 
