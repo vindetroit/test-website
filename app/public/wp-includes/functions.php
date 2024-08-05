@@ -9111,6 +9111,7 @@ function update_page_selection() {
 add_action('admin_post_update_page_selection', 'update_page_selection');
 */
 
+// Handle user form submission
 function handle_user_submission() {
     // Check if form is submitted and nonce is valid
     if (isset($_POST['submit_form']) && check_admin_referer('user_submission_nonce')) {
@@ -9176,31 +9177,24 @@ function handle_user_submission() {
                     wp_redirect(add_query_arg('message', 'success', wp_get_referer()));
                     exit;
                 } else {
-                    // Log error for debugging
-                    error_log('Page creation failed: ' . print_r($page_id, true));
                     wp_redirect(add_query_arg('message', 'submission_error', wp_get_referer()));
                     exit;
                 }
             } else {
-                // Log error for debugging
-                error_log('Post creation failed: ' . print_r($post_id, true));
                 wp_redirect(add_query_arg('message', 'submission_error', wp_get_referer()));
                 exit;
             }
         } else {
-            // Redirect back to the form page with an error message
             wp_redirect(add_query_arg('message', 'missing_fields', wp_get_referer()));
             exit;
         }
     } else {
-        // Redirect back to the form page if nonce verification failed
         wp_redirect(add_query_arg('message', 'invalid_nonce', wp_get_referer()));
         exit;
     }
 }
 add_action('admin_post_nopriv_handle_user_submission', 'handle_user_submission');
 add_action('admin_post_handle_user_submission', 'handle_user_submission');
-
 
 // Schedule the event if it hasn't been scheduled
 function schedule_delete_expired_posts() {
@@ -9234,24 +9228,25 @@ function delete_expired_posts_function() {
         while ($query->have_posts()) {
             $query->the_post();
             $post_id = get_the_ID();
-            error_log('Attempting to delete post ID: ' . $post_id); // Debugging line
-            
-            // Attempt to delete the post
-            $deleted = wp_delete_post($post_id, true); // Force deletion
-            
-            if ($deleted) {
-                error_log('Successfully deleted post ID: ' . $post_id);
-            } else {
-                error_log('Failed to delete post ID: ' . $post_id);
+
+            // Fetch the associated page object from ACF field
+            $linked_page = get_field('linked_page', $post_id);
+
+            if ($linked_page && $linked_page instanceof WP_Post) {
+                $linked_page_id = $linked_page->ID;
+
+                // Check if the page exists
+                $page_exists = get_post($linked_page_id);
+
+                if ($page_exists) {
+                    // Attempt to move the associated page to trash
+                    wp_trash_post($linked_page_id);
+                }
             }
+
+            // Attempt to move the post to trash
+            wp_trash_post($post_id);
         }
-    } else {
-        error_log('No expired posts found'); // Debugging line
     }
     wp_reset_postdata();
 }
-
-
-
-
-

@@ -405,3 +405,60 @@ Stack trace:
 [05-Aug-2024 02:27:21 UTC] PHP Warning:  Constant WP_DEBUG_DISPLAY already defined in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-config.php on line 107
 [05-Aug-2024 02:29:22 UTC] Attempting to delete post ID: 54
 [05-Aug-2024 02:29:23 UTC] Successfully deleted post ID: 54
+[05-Aug-2024 19:54:37 UTC] No expired posts found
+[05-Aug-2024 19:55:59 UTC] No expired posts found
+[05-Aug-2024 19:56:45 UTC] Attempting to delete post ID: 79
+[05-Aug-2024 19:56:45 UTC] Failed to delete associated page ID: http://user-messages-site.local/page-for-44/
+[05-Aug-2024 19:56:57 UTC] Successfully deleted post ID: 79
+[05-Aug-2024 20:02:57 UTC] Attempting to delete post ID: 77
+[05-Aug-2024 20:02:57 UTC] Failed to delete associated page ID: http://user-messages-site.local/page-for-testa/
+[05-Aug-2024 20:03:00 UTC] Successfully deleted post ID: 77
+[05-Aug-2024 20:05:08 UTC] No expired posts found
+[05-Aug-2024 20:14:46 UTC] Attempting to delete post ID: 96
+[05-Aug-2024 20:14:52 UTC] Successfully deleted post ID: 96
+[05-Aug-2024 20:18:24 UTC] Attempting to handle post ID: 105
+[05-Aug-2024 20:18:24 UTC] Associated page ID does not exist: http://user-messages-site.local/page-for-addddd/
+[05-Aug-2024 20:18:24 UTC] Successfully moved post ID to trash: 105
+[05-Aug-2024 20:22:03 UTC] Handling post ID: 105
+[05-Aug-2024 20:22:03 UTC] Linked page ID for post ID 105: http://user-messages-site.local/page-for-addddd/
+[05-Aug-2024 20:22:03 UTC] No valid linked page ID found for post ID: 105
+[05-Aug-2024 20:22:03 UTC] Successfully moved post ID to trash: 105
+[05-Aug-2024 20:27:54 UTC] No expired posts found
+[05-Aug-2024 20:28:12 UTC] Handling post ID: 105
+[05-Aug-2024 20:28:12 UTC] Linked page ID raw value for post ID 105: http://user-messages-site.local/page-for-addddd/
+[05-Aug-2024 20:28:12 UTC] Linked page ID type for post ID 105: string
+[05-Aug-2024 20:28:12 UTC] No valid linked page ID found for post ID: 105
+[05-Aug-2024 20:28:13 UTC] Successfully moved post ID to trash: 105
+[05-Aug-2024 20:35:26 UTC] Handling post ID: 109
+[05-Aug-2024 20:35:26 UTC] Linked page object for post ID 109: WP_Post Object
+(
+    [ID] => 110
+    [post_author] => 1
+    [post_date] => 2024-08-05 20:34:03
+    [post_date_gmt] => 2024-08-05 20:34:03
+    [post_content] => This page is linked to the post ID 109
+    [post_title] => Page for 111111111111
+    [post_excerpt] => 
+    [post_status] => publish
+    [comment_status] => closed
+    [ping_status] => closed
+    [post_password] => 
+    [post_name] => page-for-111111111111
+    [to_ping] => 
+    [pinged] => 
+    [post_modified] => 2024-08-05 20:34:03
+    [post_modified_gmt] => 2024-08-05 20:34:03
+    [post_content_filtered] => 
+    [post_parent] => 0
+    [guid] => http://user-messages-site.local/page-for-111111111111/
+    [menu_order] => 0
+    [post_type] => page
+    [post_mime_type] => 
+    [comment_count] => 0
+    [filter] => raw
+)
+
+[05-Aug-2024 20:35:26 UTC] Linked page type for post ID 109: object
+[05-Aug-2024 20:35:26 UTC] Extracted page ID for post ID 109: 110
+[05-Aug-2024 20:35:26 UTC] Successfully moved associated page ID to trash: 110
+[05-Aug-2024 20:35:26 UTC] Successfully moved post ID to trash: 109
