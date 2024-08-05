@@ -4,3 +4,404 @@
 [04-Aug-2024 00:43:02 UTC] PHP Warning:  Undefined variable $images in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-content\themes\astra\page-display-submissions.php on line 107
 [04-Aug-2024 00:43:04 UTC] PHP Warning:  Undefined variable $images in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-content\themes\astra\page-display-submissions.php on line 107
 [04-Aug-2024 19:19:14 UTC] PHP Warning:  Undefined variable $page_selection in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\functions.php on line 9020
+[04-Aug-2024 23:30:39 UTC] PHP Parse error:  Unterminated comment starting line 9007 in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\functions.php on line 9007
+[04-Aug-2024 23:30:39 UTC] PHP Parse error:  Unterminated comment starting line 9007 in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\functions.php on line 9007
+[04-Aug-2024 23:39:51 UTC] Gallery Images Field Data:
+[04-Aug-2024 23:39:51 UTC] Array
+(
+    [ID] => 60
+    [id] => 60
+    [title] => 2
+    [filename] => 2.png
+    [filesize] => 567893
+    [url] => http://user-messages-site.local/wp-content/uploads/2024/08/2.png
+    [link] => http://user-messages-site.local/user-submission-2/attachment/2/
+    [alt] => 
+    [author] => 1
+    [description] => 
+    [caption] => 
+    [name] => 2
+    [status] => inherit
+    [uploaded_to] => 48
+    [date] => 2024-08-04 01:42:32
+    [modified] => 2024-08-04 01:42:32
+    [menu_order] => 0
+    [mime_type] => image/png
+    [type] => image
+    [subtype] => png
+    [icon] => http://user-messages-site.local/wp-includes/images/media/default.png
+    [width] => 419
+    [height] => 490
+    [sizes] => Array
+        (
+            [thumbnail] => http://user-messages-site.local/wp-content/uploads/2024/08/2-150x150.png
+            [thumbnail-width] => 150
+            [thumbnail-height] => 150
+            [medium] => http://user-messages-site.local/wp-content/uploads/2024/08/2-257x300.png
+            [medium-width] => 257
+            [medium-height] => 300
+            [medium_large] => http://user-messages-site.local/wp-content/uploads/2024/08/2.png
+            [medium_large-width] => 419
+            [medium_large-height] => 490
+            [large] => http://user-messages-site.local/wp-content/uploads/2024/08/2.png
+            [large-width] => 419
+            [large-height] => 490
+            [1536x1536] => http://user-messages-site.local/wp-content/uploads/2024/08/2.png
+            [1536x1536-width] => 419
+            [1536x1536-height] => 490
+            [2048x2048] => http://user-messages-site.local/wp-content/uploads/2024/08/2.png
+            [2048x2048-width] => 419
+            [2048x2048-height] => 490
+        )
+
+)
+
+[04-Aug-2024 23:41:20 UTC] Gallery Images Field Data:
+[04-Aug-2024 23:41:20 UTC] Array
+(
+    [ID] => 60
+    [id] => 60
+    [title] => 2
+    [filename] => 2.png
+    [filesize] => 567893
+    [url] => http://user-messages-site.local/wp-content/uploads/2024/08/2.png
+    [link] => http://user-messages-site.local/user-submission-2/attachment/2/
+    [alt] => 
+    [author] => 1
+    [description] => 
+    [caption] => 
+    [name] => 2
+    [status] => inherit
+    [uploaded_to] => 48
+    [date] => 2024-08-04 01:42:32
+    [modified] => 2024-08-04 01:42:32
+    [menu_order] => 0
+    [mime_type] => image/png
+    [type] => image
+    [subtype] => png
+    [icon] => http://user-messages-site.local/wp-includes/images/media/default.png
+    [width] => 419
+    [height] => 490
+    [sizes] => Array
+        (
+            [thumbnail] => http://user-messages-site.local/wp-content/uploads/2024/08/2-150x150.png
+            [thumbnail-width] => 150
+            [thumbnail-height] => 150
+            [medium] => http://user-messages-site.local/wp-content/uploads/2024/08/2-257x300.png
+            [medium-width] => 257
+            [medium-height] => 300
+            [medium_large] => http://user-messages-site.local/wp-content/uploads/2024/08/2.png
+            [medium_large-width] => 419
+            [medium_large-height] => 490
+            [large] => http://user-messages-site.local/wp-content/uploads/2024/08/2.png
+            [large-width] => 419
+            [large-height] => 490
+            [1536x1536] => http://user-messages-site.local/wp-content/uploads/2024/08/2.png
+            [1536x1536-width] => 419
+            [1536x1536-height] => 490
+            [2048x2048] => http://user-messages-site.local/wp-content/uploads/2024/08/2.png
+            [2048x2048-width] => 419
+            [2048x2048-height] => 490
+        )
+
+)
+
+[04-Aug-2024 23:41:58 UTC] Gallery Images Field Data:
+[04-Aug-2024 23:41:58 UTC] Array
+(
+    [ID] => 60
+    [id] => 60
+    [title] => 2
+    [filename] => 2.png
+    [filesize] => 567893
+    [url] => http://user-messages-site.local/wp-content/uploads/2024/08/2.png
+    [link] => http://user-messages-site.local/user-submission-2/attachment/2/
+    [alt] => 
+    [author] => 1
+    [description] => 
+    [caption] => 
+    [name] => 2
+    [status] => inherit
+    [uploaded_to] => 48
+    [date] => 2024-08-04 01:42:32
+    [modified] => 2024-08-04 01:42:32
+    [menu_order] => 0
+    [mime_type] => image/png
+    [type] => image
+    [subtype] => png
+    [icon] => http://user-messages-site.local/wp-includes/images/media/default.png
+    [width] => 419
+    [height] => 490
+    [sizes] => Array
+        (
+            [thumbnail] => http://user-messages-site.local/wp-content/uploads/2024/08/2-150x150.png
+            [thumbnail-width] => 150
+            [thumbnail-height] => 150
+            [medium] => http://user-messages-site.local/wp-content/uploads/2024/08/2-257x300.png
+            [medium-width] => 257
+            [medium-height] => 300
+            [medium_large] => http://user-messages-site.local/wp-content/uploads/2024/08/2.png
+            [medium_large-width] => 419
+            [medium_large-height] => 490
+            [large] => http://user-messages-site.local/wp-content/uploads/2024/08/2.png
+            [large-width] => 419
+            [large-height] => 490
+            [1536x1536] => http://user-messages-site.local/wp-content/uploads/2024/08/2.png
+            [1536x1536-width] => 419
+            [1536x1536-height] => 490
+            [2048x2048] => http://user-messages-site.local/wp-content/uploads/2024/08/2.png
+            [2048x2048-width] => 419
+            [2048x2048-height] => 490
+        )
+
+)
+
+[04-Aug-2024 23:45:10 UTC] Gallery Images Field Data:
+[04-Aug-2024 23:45:10 UTC] Array
+(
+    [ID] => 60
+    [id] => 60
+    [title] => 2
+    [filename] => 2.png
+    [filesize] => 567893
+    [url] => http://user-messages-site.local/wp-content/uploads/2024/08/2.png
+    [link] => http://user-messages-site.local/user-submission-2/attachment/2/
+    [alt] => 
+    [author] => 1
+    [description] => 
+    [caption] => 
+    [name] => 2
+    [status] => inherit
+    [uploaded_to] => 48
+    [date] => 2024-08-04 01:42:32
+    [modified] => 2024-08-04 01:42:32
+    [menu_order] => 0
+    [mime_type] => image/png
+    [type] => image
+    [subtype] => png
+    [icon] => http://user-messages-site.local/wp-includes/images/media/default.png
+    [width] => 419
+    [height] => 490
+    [sizes] => Array
+        (
+            [thumbnail] => http://user-messages-site.local/wp-content/uploads/2024/08/2-150x150.png
+            [thumbnail-width] => 150
+            [thumbnail-height] => 150
+            [medium] => http://user-messages-site.local/wp-content/uploads/2024/08/2-257x300.png
+            [medium-width] => 257
+            [medium-height] => 300
+            [medium_large] => http://user-messages-site.local/wp-content/uploads/2024/08/2.png
+            [medium_large-width] => 419
+            [medium_large-height] => 490
+            [large] => http://user-messages-site.local/wp-content/uploads/2024/08/2.png
+            [large-width] => 419
+            [large-height] => 490
+            [1536x1536] => http://user-messages-site.local/wp-content/uploads/2024/08/2.png
+            [1536x1536-width] => 419
+            [1536x1536-height] => 490
+            [2048x2048] => http://user-messages-site.local/wp-content/uploads/2024/08/2.png
+            [2048x2048-width] => 419
+            [2048x2048-height] => 490
+        )
+
+)
+
+[05-Aug-2024 00:23:50 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string * int in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-content\themes\kadence\page-display-submissions.php:53
+Stack trace:
+#0 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-blog-header.php(19): require_once('C:\\Users\\vduong...')
+#2 C:\Users\vduong\Local Sites\user-messages-site\app\public\index.php(17): require('C:\\Users\\vduong...')
+#3 {main}
+  thrown in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-content\themes\kadence\page-display-submissions.php on line 53
+[05-Aug-2024 00:23:52 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string * int in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-content\themes\kadence\page-display-submissions.php:53
+Stack trace:
+#0 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-blog-header.php(19): require_once('C:\\Users\\vduong...')
+#2 C:\Users\vduong\Local Sites\user-messages-site\app\public\index.php(17): require('C:\\Users\\vduong...')
+#3 {main}
+  thrown in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-content\themes\kadence\page-display-submissions.php on line 53
+[05-Aug-2024 00:23:53 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string * int in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-content\themes\kadence\page-display-submissions.php:53
+Stack trace:
+#0 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-blog-header.php(19): require_once('C:\\Users\\vduong...')
+#2 C:\Users\vduong\Local Sites\user-messages-site\app\public\index.php(17): require('C:\\Users\\vduong...')
+#3 {main}
+  thrown in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-content\themes\kadence\page-display-submissions.php on line 53
+[05-Aug-2024 00:23:54 UTC] PHP Fatal error:  Uncaught TypeError: Unsupported operand types: string * int in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-content\themes\kadence\page-display-submissions.php:53
+Stack trace:
+#0 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\template-loader.php(106): include()
+#1 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-blog-header.php(19): require_once('C:\\Users\\vduong...')
+#2 C:\Users\vduong\Local Sites\user-messages-site\app\public\index.php(17): require('C:\\Users\\vduong...')
+#3 {main}
+  thrown in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-content\themes\kadence\page-display-submissions.php on line 53
+[05-Aug-2024 00:31:08 UTC] PHP Fatal error:  Uncaught TypeError: arsort(): Argument #1 ($array) must be of type array, null given in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\plugin.php:771
+Stack trace:
+#0 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\plugin.php(771): arsort(NULL)
+#1 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\plugin.php(893): plugin_basename('C:/Users/vduong...')
+#2 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\functions.php(9251): register_deactivation_hook('C:\\Users\\vduong...', 'clear_scheduled...')
+#3 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-settings.php(113): require('C:\\Users\\vduong...')
+#4 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-config.php(103): require_once('C:\\Users\\vduong...')
+#5 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-load.php(50): require_once('C:\\Users\\vduong...')
+#6 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-admin\admin-ajax.php(22): require_once('C:\\Users\\vduong...')
+#7 {main}
+  thrown in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\plugin.php on line 771
+[05-Aug-2024 00:33:08 UTC] PHP Fatal error:  Uncaught TypeError: arsort(): Argument #1 ($array) must be of type array, null given in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\plugin.php:771
+Stack trace:
+#0 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\plugin.php(771): arsort(NULL)
+#1 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\plugin.php(893): plugin_basename('C:/Users/vduong...')
+#2 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\functions.php(9251): register_deactivation_hook('C:\\Users\\vduong...', 'clear_scheduled...')
+#3 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-settings.php(113): require('C:\\Users\\vduong...')
+#4 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-config.php(103): require_once('C:\\Users\\vduong...')
+#5 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-load.php(50): require_once('C:\\Users\\vduong...')
+#6 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-admin\admin-ajax.php(22): require_once('C:\\Users\\vduong...')
+#7 {main}
+  thrown in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\plugin.php on line 771
+[05-Aug-2024 00:35:09 UTC] PHP Fatal error:  Uncaught TypeError: arsort(): Argument #1 ($array) must be of type array, null given in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\plugin.php:771
+Stack trace:
+#0 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\plugin.php(771): arsort(NULL)
+#1 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\plugin.php(893): plugin_basename('C:/Users/vduong...')
+#2 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\functions.php(9241): register_deactivation_hook('C:\\Users\\vduong...', 'clear_scheduled...')
+#3 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-settings.php(113): require('C:\\Users\\vduong...')
+#4 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-config.php(103): require_once('C:\\Users\\vduong...')
+#5 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-load.php(50): require_once('C:\\Users\\vduong...')
+#6 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-admin\admin-ajax.php(22): require_once('C:\\Users\\vduong...')
+#7 {main}
+  thrown in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\plugin.php on line 771
+[05-Aug-2024 00:35:25 UTC] PHP Fatal error:  Uncaught TypeError: arsort(): Argument #1 ($array) must be of type array, null given in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\plugin.php:771
+Stack trace:
+#0 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\plugin.php(771): arsort(NULL)
+#1 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\plugin.php(893): plugin_basename('C:/Users/vduong...')
+#2 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\functions.php(9241): register_deactivation_hook('C:\\Users\\vduong...', 'clear_scheduled...')
+#3 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-settings.php(113): require('C:\\Users\\vduong...')
+#4 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-config.php(103): require_once('C:\\Users\\vduong...')
+#5 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-load.php(50): require_once('C:\\Users\\vduong...')
+#6 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-blog-header.php(13): require_once('C:\\Users\\vduong...')
+#7 C:\Users\vduong\Local Sites\user-messages-site\app\public\index.php(17): require('C:\\Users\\vduong...')
+#8 {main}
+  thrown in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\plugin.php on line 771
+[05-Aug-2024 00:36:00 UTC] PHP Fatal error:  Uncaught TypeError: arsort(): Argument #1 ($array) must be of type array, null given in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\plugin.php:771
+Stack trace:
+#0 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\plugin.php(771): arsort(NULL)
+#1 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\plugin.php(893): plugin_basename('C:/Users/vduong...')
+#2 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\functions.php(9239): register_deactivation_hook('C:\\Users\\vduong...', 'clear_scheduled...')
+#3 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-settings.php(113): require('C:\\Users\\vduong...')
+#4 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-config.php(103): require_once('C:\\Users\\vduong...')
+#5 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-load.php(50): require_once('C:\\Users\\vduong...')
+#6 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-blog-header.php(13): require_once('C:\\Users\\vduong...')
+#7 C:\Users\vduong\Local Sites\user-messages-site\app\public\index.php(17): require('C:\\Users\\vduong...')
+#8 {main}
+  thrown in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\plugin.php on line 771
+[05-Aug-2024 00:36:08 UTC] PHP Fatal error:  Uncaught TypeError: arsort(): Argument #1 ($array) must be of type array, null given in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\plugin.php:771
+Stack trace:
+#0 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\plugin.php(771): arsort(NULL)
+#1 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\plugin.php(893): plugin_basename('C:/Users/vduong...')
+#2 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\functions.php(9251): register_deactivation_hook('C:\\Users\\vduong...', 'clear_scheduled...')
+#3 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-settings.php(113): require('C:\\Users\\vduong...')
+#4 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-config.php(103): require_once('C:\\Users\\vduong...')
+#5 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-load.php(50): require_once('C:\\Users\\vduong...')
+#6 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-blog-header.php(13): require_once('C:\\Users\\vduong...')
+#7 C:\Users\vduong\Local Sites\user-messages-site\app\public\index.php(17): require('C:\\Users\\vduong...')
+#8 {main}
+  thrown in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\plugin.php on line 771
+[05-Aug-2024 00:36:09 UTC] PHP Fatal error:  Uncaught TypeError: arsort(): Argument #1 ($array) must be of type array, null given in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\plugin.php:771
+Stack trace:
+#0 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\plugin.php(771): arsort(NULL)
+#1 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\plugin.php(893): plugin_basename('C:/Users/vduong...')
+#2 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\functions.php(9251): register_deactivation_hook('C:\\Users\\vduong...', 'clear_scheduled...')
+#3 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-settings.php(113): require('C:\\Users\\vduong...')
+#4 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-config.php(103): require_once('C:\\Users\\vduong...')
+#5 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-load.php(50): require_once('C:\\Users\\vduong...')
+#6 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-blog-header.php(13): require_once('C:\\Users\\vduong...')
+#7 C:\Users\vduong\Local Sites\user-messages-site\app\public\index.php(17): require('C:\\Users\\vduong...')
+#8 {main}
+  thrown in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\plugin.php on line 771
+[05-Aug-2024 01:45:34 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_clear_scheduled_hook() in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\functions.php:9255
+Stack trace:
+#0 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-settings.php(113): require()
+#1 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-config.php(103): require_once('C:\\Users\\vduong...')
+#2 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-load.php(50): require_once('C:\\Users\\vduong...')
+#3 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-admin\admin-ajax.php(22): require_once('C:\\Users\\vduong...')
+#4 {main}
+  thrown in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\functions.php on line 9255
+[05-Aug-2024 01:45:35 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_clear_scheduled_hook() in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\functions.php:9255
+Stack trace:
+#0 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-settings.php(113): require()
+#1 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-config.php(103): require_once('C:\\Users\\vduong...')
+#2 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-load.php(50): require_once('C:\\Users\\vduong...')
+#3 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-admin\admin.php(34): require_once('C:\\Users\\vduong...')
+#4 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-admin\edit.php(10): require_once('C:\\Users\\vduong...')
+#5 {main}
+  thrown in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\functions.php on line 9255
+[05-Aug-2024 01:48:50 UTC] Posts to delete: 0
+[05-Aug-2024 01:49:09 UTC] Posts to delete: 0
+[05-Aug-2024 01:51:24 UTC] PHP Fatal error:  Uncaught TypeError: arsort(): Argument #1 ($array) must be of type array, null given in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\plugin.php:771
+Stack trace:
+#0 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\plugin.php(771): arsort(NULL)
+#1 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\plugin.php(893): plugin_basename('C:/Users/vduong...')
+#2 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\functions.php(9245): register_deactivation_hook('C:\\Users\\vduong...', 'clear_expiratio...')
+#3 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-settings.php(113): require('C:\\Users\\vduong...')
+#4 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-config.php(103): require_once('C:\\Users\\vduong...')
+#5 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-load.php(50): require_once('C:\\Users\\vduong...')
+#6 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-admin\admin.php(34): require_once('C:\\Users\\vduong...')
+#7 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-admin\tools.php(40): require_once('C:\\Users\\vduong...')
+#8 {main}
+  thrown in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\plugin.php on line 771
+[05-Aug-2024 01:51:24 UTC] PHP Fatal error:  Uncaught TypeError: arsort(): Argument #1 ($array) must be of type array, null given in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\plugin.php:771
+Stack trace:
+#0 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\plugin.php(771): arsort(NULL)
+#1 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\plugin.php(893): plugin_basename('C:/Users/vduong...')
+#2 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\functions.php(9245): register_deactivation_hook('C:\\Users\\vduong...', 'clear_expiratio...')
+#3 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-settings.php(113): require('C:\\Users\\vduong...')
+#4 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-config.php(103): require_once('C:\\Users\\vduong...')
+#5 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-load.php(50): require_once('C:\\Users\\vduong...')
+#6 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-admin\admin-ajax.php(22): require_once('C:\\Users\\vduong...')
+#7 {main}
+  thrown in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\plugin.php on line 771
+[05-Aug-2024 01:53:16 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_next_scheduled() in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\functions.php:9239
+Stack trace:
+#0 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-settings.php(113): require()
+#1 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-config.php(103): require_once('C:\\Users\\vduong...')
+#2 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-load.php(50): require_once('C:\\Users\\vduong...')
+#3 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-admin\admin.php(34): require_once('C:\\Users\\vduong...')
+#4 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-admin\tools.php(40): require_once('C:\\Users\\vduong...')
+#5 {main}
+  thrown in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\functions.php on line 9239
+[05-Aug-2024 02:04:14 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_next_scheduled() in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\functions.php:9205
+Stack trace:
+#0 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-settings.php(113): require()
+#1 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-config.php(103): require_once('C:\\Users\\vduong...')
+#2 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-load.php(50): require_once('C:\\Users\\vduong...')
+#3 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-admin\admin.php(34): require_once('C:\\Users\\vduong...')
+#4 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-admin\tools.php(40): require_once('C:\\Users\\vduong...')
+#5 {main}
+  thrown in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\functions.php on line 9205
+[05-Aug-2024 02:04:14 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function wp_next_scheduled() in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\functions.php:9205
+Stack trace:
+#0 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-settings.php(113): require()
+#1 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-config.php(103): require_once('C:\\Users\\vduong...')
+#2 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-load.php(50): require_once('C:\\Users\\vduong...')
+#3 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-admin\admin-ajax.php(22): require_once('C:\\Users\\vduong...')
+#4 {main}
+  thrown in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\functions.php on line 9205
+[05-Aug-2024 02:22:58 UTC] Deleting post ID: 79
+[05-Aug-2024 02:26:39 UTC] PHP Warning:  Constant WP_DEBUG already defined in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-config.php on line 105
+[05-Aug-2024 02:26:39 UTC] PHP Warning:  Constant WP_DEBUG_LOG already defined in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-config.php on line 106
+[05-Aug-2024 02:26:39 UTC] PHP Warning:  Constant WP_DEBUG_DISPLAY already defined in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-config.php on line 107
+[05-Aug-2024 02:26:54 UTC] PHP Warning:  Constant WP_DEBUG already defined in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-config.php on line 105
+[05-Aug-2024 02:26:54 UTC] PHP Warning:  Constant WP_DEBUG_LOG already defined in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-config.php on line 106
+[05-Aug-2024 02:26:54 UTC] PHP Warning:  Constant WP_DEBUG_DISPLAY already defined in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-config.php on line 107
+[05-Aug-2024 02:27:02 UTC] PHP Warning:  Constant WP_DEBUG already defined in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-config.php on line 105
+[05-Aug-2024 02:27:02 UTC] PHP Warning:  Constant WP_DEBUG_LOG already defined in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-config.php on line 106
+[05-Aug-2024 02:27:02 UTC] PHP Warning:  Constant WP_DEBUG_DISPLAY already defined in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-config.php on line 107
+[05-Aug-2024 02:27:02 UTC] PHP Warning:  Constant WP_DEBUG already defined in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-config.php on line 105
+[05-Aug-2024 02:27:02 UTC] PHP Warning:  Constant WP_DEBUG_LOG already defined in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-config.php on line 106
+[05-Aug-2024 02:27:02 UTC] PHP Warning:  Constant WP_DEBUG_DISPLAY already defined in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-config.php on line 107
+[05-Aug-2024 02:27:20 UTC] PHP Warning:  Constant WP_DEBUG already defined in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-config.php on line 105
+[05-Aug-2024 02:27:20 UTC] PHP Warning:  Constant WP_DEBUG_LOG already defined in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-config.php on line 106
+[05-Aug-2024 02:27:20 UTC] PHP Warning:  Constant WP_DEBUG_DISPLAY already defined in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-config.php on line 107
+[05-Aug-2024 02:27:20 UTC] No expired posts found
+[05-Aug-2024 02:27:21 UTC] PHP Warning:  Constant WP_DEBUG already defined in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-config.php on line 105
+[05-Aug-2024 02:27:21 UTC] PHP Warning:  Constant WP_DEBUG_LOG already defined in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-config.php on line 106
+[05-Aug-2024 02:27:21 UTC] PHP Warning:  Constant WP_DEBUG_DISPLAY already defined in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-config.php on line 107
+[05-Aug-2024 02:29:22 UTC] Attempting to delete post ID: 54
+[05-Aug-2024 02:29:23 UTC] Successfully deleted post ID: 54

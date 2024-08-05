@@ -9004,7 +9004,7 @@ function wp_admin_notice( $message, $args = array() ) {
 	echo wp_kses_post( wp_get_admin_notice( $message, $args ) );
 }
 
-
+/*
 function usp_get_pages_dropdown() {
     $pages = get_pages();
     $dropdown = '<select name="usp-selected-page" id="usp-selected-page">';
@@ -9016,7 +9016,6 @@ function usp_get_pages_dropdown() {
 }
 
 
-//Admin custom menu
 function register_submission_admin_menu() {
     add_menu_page(
         'User Submissions',
@@ -9110,7 +9109,7 @@ function update_page_selection() {
     }
 }
 add_action('admin_post_update_page_selection', 'update_page_selection');
-
+*/
 
 function handle_user_submission() {
     // Check if form is submitted and nonce is valid
@@ -9203,8 +9202,54 @@ add_action('admin_post_nopriv_handle_user_submission', 'handle_user_submission')
 add_action('admin_post_handle_user_submission', 'handle_user_submission');
 
 
+// Schedule the event if it hasn't been scheduled
+function schedule_delete_expired_posts() {
+    if (!wp_next_scheduled('delete_expired_posts')) {
+        wp_schedule_event(time(), 'hourly', 'delete_expired_posts');
+    }
+}
+add_action('init', 'schedule_delete_expired_posts');
 
+// Hook the function to the event
+add_action('delete_expired_posts', 'delete_expired_posts_function');
 
+function delete_expired_posts_function() {
+    $args = array(
+        'post_type' => array('post', 'attachment'),
+        'meta_query' => array(
+            array(
+                'key' => 'expiration_time',
+                'value' => current_time('timestamp'),
+                'compare' => '<',
+                'type' => 'NUMERIC'
+            )
+        ),
+        'posts_per_page' => -1, // Ensure all posts are fetched
+        'post_status' => array('publish', 'inherit') // Include attachment status
+    );
+
+    $query = new WP_Query($args);
+
+    if ($query->have_posts()) {
+        while ($query->have_posts()) {
+            $query->the_post();
+            $post_id = get_the_ID();
+            error_log('Attempting to delete post ID: ' . $post_id); // Debugging line
+            
+            // Attempt to delete the post
+            $deleted = wp_delete_post($post_id, true); // Force deletion
+            
+            if ($deleted) {
+                error_log('Successfully deleted post ID: ' . $post_id);
+            } else {
+                error_log('Failed to delete post ID: ' . $post_id);
+            }
+        }
+    } else {
+        error_log('No expired posts found'); // Debugging line
+    }
+    wp_reset_postdata();
+}
 
 
 
