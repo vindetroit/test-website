@@ -46,7 +46,7 @@ get_header(); ?>
         if ($image && is_array($image)):
             $url = isset($image['url']) ? esc_url($image['url']) : '';
             $alt = isset($image['alt']) ? esc_attr($image['alt']) : 'Gallery image';
-            for ($i = 0; $i < 9; $i++): ?>
+            for ($i = 0; $i < 10; $i++): ?>
                 <div class="gallery-item">
                     <?php if ($url): ?>
                         <img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>" class="front">
@@ -83,7 +83,7 @@ $random_start = rand(0, 359);
     height: 200px;
     position: relative;
     transform-style: preserve-3d;
-    animation: rotate 15s infinite linear;
+    animation: rotate 30s infinite linear; /* Slowed down animation speed */
     transform: rotateY(<?php echo $random_start; ?>deg);
 }
 .gallery-item {
@@ -94,26 +94,27 @@ $random_start = rand(0, 359);
     transform-style: preserve-3d;
 }
 .gallery-item .front {
-    transform: translateZ(300px);
+    transform: translateZ(400px); /* Increase this value for more space between images */
 }
 .gallery-item .back {
     display: none;
 }
 .gallery-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
 }
-/* Adjusted rotations for 9 items */
-.gallery-item:nth-child(1) .front { transform: rotateY(0deg) translateZ(300px); }
-.gallery-item:nth-child(2) .front { transform: rotateY(40deg) translateZ(300px); }
-.gallery-item:nth-child(3) .front { transform: rotateY(80deg) translateZ(300px); }
-.gallery-item:nth-child(4) .front { transform: rotateY(120deg) translateZ(300px); }
-.gallery-item:nth-child(5) .front { transform: rotateY(160deg) translateZ(300px); }
-.gallery-item:nth-child(6) .front { transform: rotateY(200deg) translateZ(300px); }
-.gallery-item:nth-child(7) .front { transform: rotateY(240deg) translateZ(300px); }
-.gallery-item:nth-child(8) .front { transform: rotateY(280deg) translateZ(300px); }
-.gallery-item:nth-child(9) .front { transform: rotateY(320deg) translateZ(300px); }
+/* Adjusted rotations for 10 items */
+.gallery-item:nth-child(1) .front { transform: rotateY(0deg) translateZ(400px); }
+.gallery-item:nth-child(2) .front { transform: rotateY(36deg) translateZ(400px); }
+.gallery-item:nth-child(3) .front { transform: rotateY(72deg) translateZ(400px); }
+.gallery-item:nth-child(4) .front { transform: rotateY(108deg) translateZ(400px); }
+.gallery-item:nth-child(5) .front { transform: rotateY(144deg) translateZ(400px); }
+.gallery-item:nth-child(6) .front { transform: rotateY(180deg) translateZ(400px); }
+.gallery-item:nth-child(7) .front { transform: rotateY(216deg) translateZ(400px); }
+.gallery-item:nth-child(8) .front { transform: rotateY(252deg) translateZ(400px); }
+.gallery-item:nth-child(9) .front { transform: rotateY(288deg) translateZ(400px); }
+.gallery-item:nth-child(10) .front { transform: rotateY(324deg) translateZ(400px); }
 @keyframes rotate {
     from { transform: rotateY(<?php echo $random_start; ?>deg); }
     to { transform: rotateY(<?php echo $random_start + 360; ?>deg); }

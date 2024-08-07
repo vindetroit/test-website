@@ -462,3 +462,15 @@ Stack trace:
 [05-Aug-2024 20:35:26 UTC] Extracted page ID for post ID 109: 110
 [05-Aug-2024 20:35:26 UTC] Successfully moved associated page ID to trash: 110
 [05-Aug-2024 20:35:26 UTC] Successfully moved post ID to trash: 109
+[06-Aug-2024 22:12:49 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-content\plugins\content-control\inc\functions\rule-callbacks.php on line 199
+[06-Aug-2024 22:48:17 UTC] PHP Warning:  Undefined array key 0 in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-content\themes\kadence\page-display-submissions.php on line 50
+[06-Aug-2024 22:48:17 UTC] PHP Warning:  Undefined array key 1 in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-content\themes\kadence\page-display-submissions.php on line 50
+[06-Aug-2024 22:48:17 UTC] PHP Warning:  Undefined array key 2 in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-content\themes\kadence\page-display-submissions.php on line 50
+[06-Aug-2024 22:48:17 UTC] PHP Warning:  Undefined array key 3 in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-content\themes\kadence\page-display-submissions.php on line 50
+[06-Aug-2024 22:48:17 UTC] PHP Warning:  Undefined array key 4 in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-content\themes\kadence\page-display-submissions.php on line 50
+[06-Aug-2024 22:48:17 UTC] PHP Warning:  Undefined array key 5 in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-content\themes\kadence\page-display-submissions.php on line 50
+[06-Aug-2024 22:48:17 UTC] PHP Warning:  Undefined array key 6 in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-content\themes\kadence\page-display-submissions.php on line 50
+[06-Aug-2024 22:48:17 UTC] PHP Warning:  Undefined array key 7 in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-content\themes\kadence\page-display-submissions.php on line 50
+[06-Aug-2024 22:48:17 UTC] PHP Warning:  Undefined array key 8 in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-content\themes\kadence\page-display-submissions.php on line 50
+[06-Aug-2024 22:48:17 UTC] PHP Warning:  Undefined array key 9 in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-content\themes\kadence\page-display-submissions.php on line 50
+[06-Aug-2024 23:04:08 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-content\themes\kadence\page-display-submissions.php on line 41
