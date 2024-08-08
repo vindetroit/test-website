@@ -474,3 +474,28 @@ Stack trace:
 [06-Aug-2024 22:48:17 UTC] PHP Warning:  Undefined array key 8 in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-content\themes\kadence\page-display-submissions.php on line 50
 [06-Aug-2024 22:48:17 UTC] PHP Warning:  Undefined array key 9 in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-content\themes\kadence\page-display-submissions.php on line 50
 [06-Aug-2024 23:04:08 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-content\themes\kadence\page-display-submissions.php on line 41
+[08-Aug-2024 01:35:19 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-content\plugins\content-control\inc\functions\rule-callbacks.php on line 199
+[08-Aug-2024 02:01:26 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-content\plugins\content-control\inc\functions\rule-callbacks.php on line 199
+[08-Aug-2024 02:17:47 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function Kadence\custom_login_logout_link() in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-content\themes\kadence\header.php:62
+Stack trace:
+#0 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\template.php(810): require_once()
+#1 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\template.php(745): load_template('C:\\Users\\vduong...', true, Array)
+#2 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-content\themes\kadence\index.php(14): get_header()
+#4 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\vduong...')
+#5 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-blog-header.php(19): require_once('C:\\Users\\vduong...')
+#6 C:\Users\vduong\Local Sites\user-messages-site\app\public\index.php(17): require('C:\\Users\\vduong...')
+#7 {main}
+  thrown in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-content\themes\kadence\header.php on line 62
+[08-Aug-2024 02:18:13 UTC] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function add_login_logout_menu_item(), 0 passed in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-content\themes\kadence\header.php on line 62 and exactly 2 expected in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\functions.php:9257
+Stack trace:
+#0 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-content\themes\kadence\header.php(62): add_login_logout_menu_item()
+#1 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\template.php(810): require_once('C:\\Users\\vduong...')
+#2 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\template.php(745): load_template('C:\\Users\\vduong...', true, Array)
+#3 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#4 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-content\themes\kadence\index.php(14): get_header()
+#5 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\template-loader.php(106): include('C:\\Users\\vduong...')
+#6 C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-blog-header.php(19): require_once('C:\\Users\\vduong...')
+#7 C:\Users\vduong\Local Sites\user-messages-site\app\public\index.php(17): require('C:\\Users\\vduong...')
+#8 {main}
+  thrown in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\functions.php on line 9257
