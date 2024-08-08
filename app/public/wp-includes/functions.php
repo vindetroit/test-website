@@ -9250,3 +9250,17 @@ function delete_expired_posts_function() {
     }
     wp_reset_postdata();
 }
+
+
+// Log in log out
+function add_login_logout_menu_item($items, $args) {
+    if ($args->theme_location == 'primary') { // Adjust 'primary' if necessary
+        if (is_user_logged_in()) {
+            $items .= '<li class="menu-item"><a href="' . wp_logout_url() . '">Logout</a></li>';
+        } else {
+            $items .= '<li class="menu-item"><a href="' . wp_login_url() . '">Login</a></li>';
+        }
+    }
+    return $items;
+}
+add_filter('wp_nav_menu_items', 'add_login_logout_menu_item', 10, 2);
