@@ -499,3 +499,6 @@ Stack trace:
 #7 C:\Users\vduong\Local Sites\user-messages-site\app\public\index.php(17): require('C:\\Users\\vduong...')
 #8 {main}
   thrown in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-includes\functions.php on line 9257
+[10-Aug-2024 02:04:11 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-content\plugins\content-control\inc\functions\rule-callbacks.php on line 199
+[10-Aug-2024 02:19:58 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-content\plugins\content-control\inc\functions\rule-callbacks.php on line 199
+[16-Aug-2024 00:25:12 UTC] PHP Warning:  Trying to access array offset on value of type null in C:\Users\vduong\Local Sites\user-messages-site\app\public\wp-content\plugins\content-control\inc\functions\rule-callbacks.php on line 199
